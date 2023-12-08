@@ -1,0 +1,13 @@
+.game__canvas1 {
+  width: 400px;
+  height: 200px;
+  border: 3px solid black;
+  margin: 40px;
+}
+
+.game__canvas2 {
+  width: 100px;
+  height: 200px;
+  border: 3px solid black;
+  margin: 40px;
+}
