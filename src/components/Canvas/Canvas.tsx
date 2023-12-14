@@ -1,6 +1,9 @@
 import useCanvas from "./useCanvas";
+import {CanvasProps} from '../../common/interfaces/interfaces'
 
-const Canvas  = props => {
+
+const Canvas  = (props : CanvasProps) => {
+
 
     const {draw, ... rest} = props
     const ref = useCanvas(draw)
