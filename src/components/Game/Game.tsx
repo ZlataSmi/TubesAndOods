@@ -5,29 +5,18 @@ import './Game.css'
 
 export const Game = () => {
 
-  const draw: CanvasProps["draw"] = (context, count) => {
-    if(context != null) {
-      context.clearRect(0,0,context.canvas.width, context.canvas.height)
-      context.fillStyle = 'grey';
-      const delta = count % 800
-      context.fillRect(10 +delta,10,100,100);
-    }
 
-}
+  const draw: CanvasProps["draw"] = (ctx, count) => {
+    if(ctx != null) {
 
-const draw2: CanvasProps["draw"] = (context, count) => {
-  if(context != null) {
-    context.clearRect(0,0,context.canvas.width, context.canvas.height)
-    context.fillStyle = 'grey';
-    const delta = count % 100
-    context.fillRect(10 ,10 +delta,100,100);
+      var p = new Path2D("M10 10 h 80 v 80 h -80 Z");
+      ctx.fill(p);
   }
 }
 
   return (
     <>
-      <Canvas className="game__canvas1" draw={draw}/>
-      <Canvas className="game__canvas2" draw={draw2}/>
+      <Canvas className="game__canvas" width={innerWidth} height={innerHeight} draw={draw}/>
     </>
   )
 }
