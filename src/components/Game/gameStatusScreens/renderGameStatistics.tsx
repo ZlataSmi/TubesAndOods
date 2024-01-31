@@ -13,7 +13,7 @@ export const renderGameStatistics = (gameGlobalStatistic : GameGlobalStatistic) 
     statisticsDiv.push(
         <div key='3' className='statistic__unit'>
             <div className="statistic__img__wrapper">
-                <img className="statistic__img" src="/assets_images/ood_n_lever.png"/>
+                <img className="statistic__img" src="./assets_images/ood_n_lever.png"/>
             </div>
             <span className="statistic__text">Всего Уды опустили рычагов: {gameGlobalStatistic.allOodSwitchedLevers}</span>    
         </div>
@@ -21,7 +21,7 @@ export const renderGameStatistics = (gameGlobalStatistic : GameGlobalStatistic) 
     statisticsDiv.push(
         <div key='4' className='statistic__unit'>
             <div className="statistic__img__wrapper">
-                <img className="statistic__img" src="/assets_images/player_dead.png"/>
+                <img className="statistic__img" src="./assets_images/player_dead.png"/>
             </div>
             <span className="statistic__text">Членов экипажа погибло в вентиляции:  {gameGlobalStatistic.playerDeaths}</span>    
         </div>
@@ -29,7 +29,7 @@ export const renderGameStatistics = (gameGlobalStatistic : GameGlobalStatistic) 
     statisticsDiv.push(
         <div key='5' className='statistic__unit'>
             <div className="statistic__img__wrapper">
-                <img className="statistic__img" src="/assets_images/win.png"/>
+                <img className="statistic__img" src="./assets_images/win.png"/>
             </div>
             <span className="statistic__text">Успешных перезапусков питания вентиляции: {gameGlobalStatistic.gameWins} </span>    
         </div>
@@ -38,9 +38,9 @@ export const renderGameStatistics = (gameGlobalStatistic : GameGlobalStatistic) 
         statisticsDiv.push(
             <div key='6' className='statistic__unit'>
                 <div className="statistic__img__wrapper">
-                    <img className="statistic__img" src="/assets_images/pressF.png"/>
+                    <img className="statistic__img" src="./assets_images/pressF.png"/>
                 </div>
-                <span className="statistic__text">Игроков, нажавших <img className='keybord_img' src="/assets_images/pressF.png"/> to pay respect: {payRespect} </span>    
+                <span className="statistic__text">Игроков, нажавших <img className='keybord_img' src="./assets_images/pressF.png"/> to pay respect: {payRespect} </span>    
             </div>
         )}
     return statisticsDiv
